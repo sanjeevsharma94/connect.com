@@ -11,10 +11,11 @@ pool:
 
 steps:
 - script: echo Hello, world!
-          ifconfig
   displayName: 'Run a one-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
+    ifconfig
+    ping 8.8.8.8
   displayName: 'Run a multi-line script'
